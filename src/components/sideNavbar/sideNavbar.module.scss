@@ -1,0 +1,59 @@
+.sideNav {
+  flex: 1;
+  border-right: 1px solid #e4dccf;
+  min-height: 100vh;
+  background-color: #ffffff;
+
+  .logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e4dccf;
+  }
+
+  .body {
+    padding: 10px;
+    border-bottom: 1px solid #e4dccf;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #e4dccf;
+        }
+
+        .icons {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  .mode {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .modeSwitch {
+      font-size: 40px;
+      color: #b4ada1;
+    }
+
+    .light,
+    .dark {
+      font-size: 28px;
+      cursor: pointer;
+    }
+  }
+}
