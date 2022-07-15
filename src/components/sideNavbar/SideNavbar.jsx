@@ -16,8 +16,7 @@ import ToggleOnOutlinedIcon from '@mui/icons-material/ToggleOnOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 
-export const SideNavbar = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+export const SideNavbar = ({ mode, setMode }) => {
   return (
     <aside className={sideNavbar.sideNav}>
       <h2 className={sideNavbar.logo}>Logo</h2>
@@ -72,17 +71,17 @@ export const SideNavbar = () => {
       <div className={sideNavbar.mode}>
         <LightModeOutlinedIcon
           className={sideNavbar.light}
-          onClick={() => setIsDarkMode(true)}
+          onClick={() => setMode(true)}
         />
 
-        {isDarkMode === false ? (
+        {mode === false ? (
           <ToggleOnOutlinedIcon className={sideNavbar.modeSwitch} />
         ) : (
           <ToggleOffOutlinedIcon className={sideNavbar.modeSwitch} />
         )}
         <DarkModeOutlinedIcon
           className={sideNavbar.dark}
-          onClick={() => setIsDarkMode(false)}
+          onClick={() => setMode(false)}
         />
       </div>
     </aside>

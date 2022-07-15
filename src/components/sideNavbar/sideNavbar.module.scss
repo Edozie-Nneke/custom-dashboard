@@ -5,11 +5,12 @@
   background-color: #ffffff;
 
   .logo {
-    height: 70px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #e4dccf;
+    color: #cd9a28;
   }
 
   .body {
@@ -26,14 +27,21 @@
         align-items: center;
         padding: 8px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
+
+        span {
+          color: #0c0c0c;
+          font-size: 0.85rem;
+        }
 
         &:hover {
-          background-color: #e4dccf;
+          background-color: #ffffe7;
+          border-left: 2px solid #cd9a28;
         }
 
         .icons {
           margin-right: 12px;
+          color: #cd9a28;
         }
       }
     }
@@ -47,12 +55,13 @@
 
     .modeSwitch {
       font-size: 40px;
-      color: #b4ada1;
+      color: #cd9a28;
     }
 
     .light,
     .dark {
       font-size: 28px;
+      color: #cd9a28;
       cursor: pointer;
     }
   }
